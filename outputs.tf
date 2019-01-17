@@ -21,3 +21,7 @@ output "port" {
 output "endpoint" {
   value = "${aws_elasticache_cluster.memcached.configuration_endpoint}"
 }
+
+output "cluster_address" {
+  value = "${aws_elasticache_cluster.memcached.cluster_address}"
+}
